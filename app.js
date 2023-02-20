@@ -1,9 +1,9 @@
-const navSlide = () => {
-  const burger = document.querySelector(".burger");
-  const nav = document.querySelector(".nav-links");
-  burger.addEventListener("click", () => {
-    nav.classList.toggle("nav-active");
-  });
+const mobile_nav = document.querySelector(".mobile-navbar-btn");
+const nav_header = document.querySelector(".header");
+
+const toggleNavbar = () => {
+  // alert("Plz Subscribe ");
+  nav_header.classList.toggle("active");
 };
 
-navSlide();
+mobile_nav.addEventListener("click", () => toggleNavbar());
